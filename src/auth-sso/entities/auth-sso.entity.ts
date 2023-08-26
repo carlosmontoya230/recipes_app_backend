@@ -1,7 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { HydratedDocument } from 'mongoose';
 
-export type ItemsDocument = HydratedDocument<AuthSso>;
+export type ItemsDocument = AuthSso & Document;
 
 @Schema()
 export class AuthSso {
